@@ -1,0 +1,15 @@
+.title {
+	margin: 20px;
+}
+
+.newUrl.ng-invalid:focus{
+	box-shadow: 0 0 0 0.2rem rgba(255,0,0,.25);
+}
+
+.error{
+	color: red;
+}
+
+.hide {
+	display: none;
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Redirect</title>
+</head>
+<body>
+<p>you will be redirecred to: <span id="url"><%= url %></span></p>
+
+<script type="text/javascript">
+	newLocation = document.getElementById('url').innerText;
+	window.location.replace(newLocation);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<div class="container">
+
+	<h1 class="title">{{ title }}</h1>
+
+	<form (ngSubmit)="onSubmit(); urlForm.reset()" #urlForm="ngForm">
+	  <div class="form-group">
+	    <label for="urlInput">Your url</label>
+	    <input type="url" [(ngModel)]="newUrl" name="url" class="form-control newUrl" id="urlInput" placeholder="Enter you url" required>
+	  </div>
+	  <div class="form-group">
+	    <label for="desireUrlInput">Desired Url</label>
+	    <input type="text" (ngModelChange)="change($event)" [(ngModel)]="desireUrl" name="desireUrl" class="form-control" id="desireUrlInput" placeholder="Enter the desired url">
+	  </div>
+		
+		<div class="text-center error" [ngClass]="{ 'hide': !this.error }"> {{ this.errorText }} </div>
+		<div class="text-center newUrl" [ngClass]="{ 'hide': this.error }"> {{ this.text }} {{ this.path + this.shortUrl }} </div>
+
+	  <button type="submit" class="btn btn-primary" [disabled]="urlForm.form.invalid || this.loading"><i class="fa fa-circle-o-notch fa-spin" *ngIf="this.loading"></i> Get Short Url</button>
+		
+	</form>
+
+</div>

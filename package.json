@@ -1,0 +1,41 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc && node server.js",
+    "start": "node server.js",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
+  },
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "@angular/common": "2.4.0",
+    "@angular/compiler": "2.4.0",
+    "@angular/core": "2.4.0",
+    "@angular/forms": "2.4.0",
+    "@angular/http": "2.4.0",
+    "@angular/platform-browser": "2.4.0",
+    "@angular/platform-browser-dynamic": "2.4.0",
+    "@angular/router": "3.4.0",
+    "body-parser": "^1.18.3",
+    "core-js": "2.4.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "request": "^2.87.0",
+    "requests": "^0.2.2",
+    "rxjs": "5.0.1",
+    "sequelize": "^4.38.0",
+    "sqlite3": "^4.0.1",
+    "systemjs": "0.19.40",
+    "zone.js": "0.7.4"
+  },
+  "devDependencies": {
+    "concurrently": "3.1.0",
+    "typescript": "2.0.10",
+    "@types/node": "^6.0.46"
+  },
+  "author": "Eugene Ukolov",
+  "license": "ISC"
+}
